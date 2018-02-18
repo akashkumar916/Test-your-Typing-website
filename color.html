@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+
+<head>
+    <script src="jquery.js"></script>
+<link rel="stylesheet" href="div.css">
+</link>
+
+
+
+</head>
+<body>
+<h1 class="o">Test Your Color</h1>
+<div class="color">
+ <a href="">Made by Akash</a>   
+    <p>I think Who I am</p>
+</div><div class="input">
+    Background: <input type="text" class="theme" id="sidebar"/>
+Border: <input type="text" class="theme" id="border"/>
+
+Links: <input type="text" class="theme" id="links"/>
+    Textcolor: <input type="text" class="theme" id="text"/></div>
+   <script type="text/javascript">
+    $(document).ready(function(){
+        
+$(".theme").keyup(function() 
+{
+var s = $("#sidebar").val();
+var text = $("#text").val();
+var border = $("#border").val();
+var links = $("#links").val();
+
+
+$(".color").css("background-color", s);
+$(".color").css("color", text);
+
+$(".color").css("border-color", border);
+
+$(".color a").css("color", links);
+});
+     
+        
+        
+    });
+    
+    
+    </script>
+    
+</body>
+
+
+
+</html>
